@@ -1,0 +1,288 @@
+Sheet,Field,Definition,Unit,Source Type,Classification,Tableau Aggregation
+Quarterly,Period,"Fiscal quarter label, e.g. FY2027-Q2. Sorts chronologically.",Text,Dimension,Dimension,Dimension
+Quarterly,Fiscal Year,"Aritzia fiscal year, named by the calendar year in which it ends.",Text,Dimension,Dimension,Dimension
+Quarterly,Quarter,"Fiscal quarter, Q1-Q4.",Text,Dimension,Dimension,Dimension
+Quarterly,Half,"H1 = Q1+Q2, H2 = Q3+Q4. Used for half-year comparisons.",Text,Dimension,Dimension,Dimension
+Quarterly,Period End,Fiscal quarter end date from the financial statements.,Date,Reported,Dimension,Dimension
+Quarterly,Days in Period,Calendar days in the quarter. 91 for a 13-week quarter; 98 for FY2024 Q4 (14 weeks).,Days,Reported,Metadata,Attribute
+Quarterly,Net Revenue,Consolidated net revenue.,C$ million,Reported,IFRS,SUM
+Quarterly,U.S. Revenue,"Net revenue attributed to the United States, reported in C$ (includes FX translation).",C$ million,Reported,IFRS,SUM
+Quarterly,Canada Revenue,Net revenue attributed to Canada.,C$ million,Reported,IFRS,SUM
+Quarterly,Retail Revenue,Retail (boutique) channel revenue. Channel and geography are alternative splits of the same revenue.,C$ million,Reported,IFRS,SUM
+Quarterly,Digital Revenue,eCommerce / Digital channel revenue.,C$ million,Reported,IFRS,SUM
+Quarterly,Gross Profit (Reported),Reported gross profit. FY2027 Q2 includes the C$97.4m tariff refund recovery.,C$ million,Reported,IFRS,SUM
+Quarterly,Tariff Refund,Tariff refund recovery recognized in gross profit (FY2027 Q2 only). Also the gross cash receipt used in cash sensitivities.,C$ million,Reported (FY2027 Q2 release),IFRS,SUM
+Quarterly,COGS (Before Refund),Cost of goods sold before tariff refund claims. Used for inventory days.,C$ million,Reported,IFRS,SUM
+Quarterly,SG&A,"Selling, general and administrative expenses.",C$ million,Reported,IFRS,SUM
+Quarterly,Adj. EBITDA (As Reported),Adjusted EBITDA on the definition used when the quarter was first reported.,C$ million,Reported,Non-IFRS,SUM
+Quarterly,Adj. EBITDA (Comparable),Adjusted EBITDA on the FY2027 definition (excludes intercompany FX) where the company disclosed revised comparatives (FY2025 Q3 onward). Earlier quarters use the original definition; see EBITDA Basis.,C$ million,Reported (FY2027 Q2 MD&A),Non-IFRS,SUM
+Quarterly,EBITDA Basis,Definition behind Adj. EBITDA (Comparable): 'FY2027 definition' or 'Original definition'.,Text,Dimension,Dimension,Dimension
+Quarterly,Net Income,Consolidated net income.,C$ million,Reported,IFRS,SUM
+Quarterly,Operating Cash Flow,Net cash from operating activities (CFO). Already includes the working-capital cash-flow impact.,C$ million,Reported,IFRS,SUM
+Quarterly,WC Cash-Flow Impact,Net change in non-cash working capital (cash-flow effect). Positive = cash released. Q4 = annual less Q1-Q3.,C$ million,Reported,IFRS,SUM
+Quarterly,Net Capex,"Capital cash expenditures net of proceeds from lease incentives (company measure), shown as positive spending.",C$ million,Reported,IFRS,SUM
+Quarterly,Lease Principal Repaid,"Repayments of principal on lease liabilities, positive.",C$ million,Reported,IFRS,SUM
+Quarterly,Credit Interest Paid,"Cash interest paid on credit facilities, positive. Added back in company FCF.",C$ million,Reported,IFRS,SUM
+Quarterly,Inventory,Period-end inventory.,C$ million,Reported,IFRS,Period-end balance: do not SUM across periods
+Quarterly,Cash,Period-end cash and cash equivalents.,C$ million,Reported,IFRS,Period-end balance: do not SUM across periods
+Quarterly,Bank Indebtedness,Period-end bank indebtedness.,C$ million,Reported,IFRS,Period-end balance: do not SUM across periods
+Quarterly,Current Assets,Period-end total current assets.,C$ million,Reported,IFRS,Period-end balance: do not SUM across periods
+Quarterly,Current Liabilities,Period-end total current liabilities.,C$ million,Reported,IFRS,Period-end balance: do not SUM across periods
+Quarterly,Total Assets,Period-end total assets.,C$ million,Reported,IFRS,Period-end balance: do not SUM across periods
+Quarterly,Comparable Sales,Company-reported comparable sales (eligible boutiques + eCommerce).,C$ million,Reported,Non-IFRS (supplementary),SUM
+Quarterly,Comparable Sales Growth,Company-reported comparable sales growth. Use as reported; the eligible base changes.,%,Reported,Non-IFRS (supplementary),Ratio: as reported; do not SUM
+Quarterly,Boutiques Opened,New Aritzia boutiques opened in the period (excludes Reigning Champ).,Count,Reported,Operating metric,SUM
+Quarterly,Boutiques Closed,Boutiques closed in the period.,Count,Reported,Operating metric,SUM
+Quarterly,Pop-up Conversions,Pop-ups converted to permanent boutiques.,Count,Reported,Operating metric,SUM
+Quarterly,Boutiques End,Aritzia boutiques at period end.,Count,Reported,Operating metric,Period-end balance: do not SUM across periods
+Quarterly,U.S. Boutiques End,U.S. boutiques at period end.,Count,Reported,Operating metric,Period-end balance: do not SUM across periods
+Quarterly,Canada Boutiques End,Canada boutiques at period end.,Count,Reported,Operating metric,Period-end balance: do not SUM across periods
+Quarterly,Opening Inventory,Inventory at the start of the quarter (= prior quarter end).,C$ million,Reported / linked,IFRS,Period-end balance: do not SUM across periods
+Quarterly,Prior-Year Net Revenue,Net revenue in the same quarter one year earlier.,C$ million,Reported / linked,IFRS,Support field
+Quarterly,Prior-Year U.S. Revenue,U.S. revenue in the same quarter one year earlier.,C$ million,Reported / linked,IFRS,Support field
+Quarterly,Prior-Year Canada Revenue,Canada revenue in the same quarter one year earlier.,C$ million,Calculated,Calculated,Support field
+Quarterly,Prior-Year Inventory,Inventory at the same quarter end one year earlier.,C$ million,Reported / linked,IFRS,Support field
+Quarterly,Prior-Year Retail Revenue,Retail revenue in the same quarter one year earlier. FY2024 rows = FY2023 quarterly disclosures (sources S8-S11).,C$ million,Reported / linked,IFRS,Support field
+Quarterly,Prior-Year Digital Revenue,Digital (eCommerce) revenue in the same quarter one year earlier. FY2024 rows = FY2023 quarterly disclosures (sources S8-S11).,C$ million,Reported / linked,IFRS,Support field
+Quarterly,Gross Profit excl. Refund,Gross Profit (Reported) - Tariff Refund.,C$ million,Calculated,Non-IFRS (analyst),SUM
+Quarterly,Free Cash Flow,Company definition: CFO + credit interest paid - lease principal repaid - net capex.,C$ million,Calculated,Non-IFRS,SUM
+Quarterly,Net Cash,Cash - bank indebtedness.,C$ million,Calculated,Calculated,Period-end balance: do not SUM across periods
+Quarterly,Revenue YoY,Net Revenue / Prior-Year Net Revenue - 1.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Quarterly,U.S. Revenue YoY,U.S. Revenue / Prior-Year U.S. Revenue - 1.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Quarterly,Canada Revenue YoY,Canada Revenue / Prior-Year Canada Revenue - 1.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Quarterly,Retail Revenue YoY,Retail Revenue / Prior-Year Retail Revenue - 1.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Quarterly,Digital Revenue YoY,Digital Revenue / Prior-Year Digital Revenue - 1.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Quarterly,U.S. Revenue Mix,U.S. Revenue / Net Revenue.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Quarterly,Digital Revenue Mix,Digital Revenue / Net Revenue.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Quarterly,Gross Margin (Reported),Gross Profit (Reported) / Net Revenue.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Quarterly,Gross Margin excl. Refund,Gross Profit excl. Refund / Net Revenue.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Quarterly,SG&A % of Revenue,SG&A / Net Revenue.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Quarterly,Adj. EBITDA Margin,Adj. EBITDA (Comparable) / Net Revenue.,%,Calculated,Non-IFRS ratio,Ratio: recompute from SUM components; do not SUM
+Quarterly,Net Income Margin,Net Income / Net Revenue.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Quarterly,Inventory YoY,Inventory / Prior-Year Inventory - 1.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Quarterly,Inventory less Revenue Growth,"Inventory YoY - Revenue YoY (percentage-point gap, stored as a decimal). Positive warrants investigation.",pp,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Quarterly,Average Inventory,(Opening Inventory + Inventory) / 2.,C$ million,Calculated,Calculated,Support field
+Quarterly,Days in Inventory,Average Inventory / COGS (Before Refund) x Days in Period.,Days,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Quarterly,CFO excl. Tariff Receipt,Operating Cash Flow - Tariff Refund. Analyst sensitivity; cash taxes held unchanged.,C$ million,Calculated,Analyst sensitivity,SUM
+Quarterly,FCF excl. Tariff Receipt,"Free Cash Flow - Tariff Refund. Analyst sensitivity, not a company measure.",C$ million,Calculated,Analyst sensitivity,SUM
+Quarterly,CFO excl. WC,Operating Cash Flow - WC Cash-Flow Impact.,C$ million,Calculated,Analyst sensitivity,SUM
+Quarterly,Capex % of Revenue,Net Capex / Net Revenue.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Quarterly,Current Ratio,Current Assets / Current Liabilities.,x,Calculated,Calculated ratio,Ratio: point-in-time
+Annual,Fiscal Year,Aritzia fiscal year (named by the calendar year in which it ends).,Text,Dimension,Dimension,Dimension
+Annual,Period End,Fiscal year end date.,Date,Reported,Dimension,Dimension
+Annual,Weeks,Weeks in the fiscal year. FY2024 has 53 weeks.,Weeks,Reported,Metadata,Attribute
+Annual,Days in Period,Days in the fiscal year (364 or 371).,Days,Reported,Metadata,Attribute
+Annual,Net Revenue,Consolidated net revenue.,C$ million,Reported,IFRS,SUM
+Annual,U.S. Revenue,Net revenue attributed to the United States (C$).,C$ million,Reported,IFRS,SUM
+Annual,Canada Revenue,Net revenue attributed to Canada.,C$ million,Reported,IFRS,SUM
+Annual,Retail Revenue,Retail channel revenue.,C$ million,Reported,IFRS,SUM
+Annual,Digital Revenue,eCommerce / Digital channel revenue.,C$ million,Reported,IFRS,SUM
+Annual,Gross Profit,Reported gross profit (no tariff refunds in FY2022-FY2026).,C$ million,Reported,IFRS,SUM
+Annual,COGS,Cost of goods sold.,C$ million,Reported,IFRS,SUM
+Annual,SG&A,"Selling, general and administrative expenses.",C$ million,Reported,IFRS,SUM
+Annual,Adj. EBITDA (As Reported),Adjusted EBITDA as originally reported for each year (pre-FY2027 definition).,C$ million,Reported,Non-IFRS,SUM
+Annual,Net Income,Consolidated net income.,C$ million,Reported,IFRS,SUM
+Annual,Operating Cash Flow,Net cash from operating activities.,C$ million,Reported,IFRS,SUM
+Annual,WC Cash-Flow Impact,Net change in non-cash working capital (cash-flow effect). Positive = cash released.,C$ million,Reported,IFRS,SUM
+Annual,Net Capex,"Capital cash expenditures net of lease incentives, positive.",C$ million,Reported,IFRS,SUM
+Annual,Lease Principal Repaid,"Lease principal repayments, positive.",C$ million,Reported,IFRS,SUM
+Annual,Credit Interest Paid,Cash interest paid on credit facilities.,C$ million,Reported,IFRS,SUM
+Annual,Inventory,Year-end inventory.,C$ million,Reported,IFRS,Period-end balance: do not SUM across periods
+Annual,Cash,Year-end cash and cash equivalents.,C$ million,Reported,IFRS,Period-end balance: do not SUM across periods
+Annual,Bank Indebtedness,Year-end bank indebtedness.,C$ million,Reported,IFRS,Period-end balance: do not SUM across periods
+Annual,Current Assets,Year-end total current assets.,C$ million,Reported,IFRS,Period-end balance: do not SUM across periods
+Annual,Current Liabilities,Year-end total current liabilities (FY2024 uses the FY2025 comparative presentation).,C$ million,Reported,IFRS,Period-end balance: do not SUM across periods
+Annual,Total Assets,Year-end total assets.,C$ million,Reported,IFRS,Period-end balance: do not SUM across periods
+Annual,Comparable Sales,Company-reported comparable sales. FY2022 not disclosed (pandemic comparability).,C$ million,Reported,Non-IFRS (supplementary),SUM
+Annual,Comparable Sales Growth,Company-reported comparable sales growth. FY2022 not disclosed.,%,Reported,Non-IFRS (supplementary),Ratio: as reported; do not SUM
+Annual,Boutiques Beginning,Aritzia boutiques at start of year.,Count,Reported,Operating metric,Period-end balance: do not SUM across periods
+Annual,Boutiques Opened,New boutiques opened in the year.,Count,Reported,Operating metric,SUM
+Annual,Boutiques Closed,Boutiques closed in the year.,Count,Reported,Operating metric,SUM
+Annual,Pop-up Conversions,Pop-ups converted to permanent boutiques.,Count,Reported,Operating metric,SUM
+Annual,Boutiques Repositioned,Repositioned / expanded boutiques (not additional boutiques).,Count,Reported,Operating metric,SUM
+Annual,Boutiques End,Aritzia boutiques at year end (excludes Reigning Champ).,Count,Reported,Operating metric,Period-end balance: do not SUM across periods
+Annual,U.S. Boutiques End,U.S. boutiques at year end. FY2022 corrected to 39 (FY2023 AIF).,Count,Reported,Operating metric,Period-end balance: do not SUM across periods
+Annual,Canada Boutiques End,Canada boutiques at year end. FY2022 corrected to 67 (FY2023 AIF).,Count,Reported,Operating metric,Period-end balance: do not SUM across periods
+Annual,Prior-Year Net Revenue,Net revenue in the prior fiscal year.,C$ million,Reported / linked,IFRS,Support field
+Annual,Prior-Year U.S. Revenue,U.S. revenue in the prior fiscal year.,C$ million,Reported / linked,IFRS,Support field
+Annual,Prior-Year Canada Revenue,Canada revenue in the prior fiscal year.,C$ million,Reported / linked,IFRS,Support field
+Annual,Prior-Year Retail Revenue,Retail revenue in the prior fiscal year.,C$ million,Reported / linked,IFRS,Support field
+Annual,Prior-Year Digital Revenue,Digital revenue in the prior fiscal year.,C$ million,Reported / linked,IFRS,Support field
+Annual,Prior-Year Inventory,Inventory at the prior fiscal year end (= opening inventory).,C$ million,Reported / linked,IFRS,Support field
+Annual,Prior-Year U.S. Boutiques,U.S. boutiques at the prior fiscal year end.,Count,Reported / linked,Operating metric,Support field
+Annual,Prior-Year Adj. EBITDA,"Adj. EBITDA (as reported) in the prior fiscal year. FY2022 row = FY2021 Adj. EBITDA 76.812 (FY2021 Q4/full-year release, S12).",C$ million,Reported / linked,Non-IFRS,Support field
+Annual,Adj. EBITDA (FY2027 Definition),"FY2026 only: sum of the four FY2026 quarters restated by the company to the FY2027 definition (C$659.7m vs 646.2m as reported). FY2022-FY2025 left blank on purpose: the company restated only FY2025 Q3 onward, so no full-year figure exists on this definition.",C$ million,Calculated from Quarterly,Non-IFRS,SUM
+Annual,Free Cash Flow,Company definition: CFO + credit interest paid - lease principal repaid - net capex.,C$ million,Calculated,Non-IFRS,SUM
+Annual,Net Cash,Cash - bank indebtedness.,C$ million,Calculated,Calculated,Period-end balance: do not SUM across periods
+Annual,Revenue Growth,Net Revenue / Prior-Year Net Revenue - 1. FY2024 includes a 53rd week.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,U.S. Revenue Growth,U.S. Revenue / Prior-Year U.S. Revenue - 1.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,Canada Revenue Growth,Canada Revenue / Prior-Year Canada Revenue - 1.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,Retail Revenue Growth,Retail Revenue / Prior-Year Retail Revenue - 1.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,Digital Revenue Growth,Digital Revenue / Prior-Year Digital Revenue - 1.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,U.S. Revenue Mix,U.S. Revenue / Net Revenue.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,Digital Revenue Mix,Digital Revenue / Net Revenue.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,Revenue Increase,Net Revenue - Prior-Year Net Revenue.,C$ million,Calculated,Calculated,SUM
+Annual,U.S. Share of Revenue Increase,"(U.S. Revenue - Prior-Year U.S. Revenue) / Revenue Increase. A contribution to growth, not a share of total revenue.",%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,Canada Share of Revenue Increase,(Canada Revenue - Prior-Year Canada Revenue) / Revenue Increase.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,Digital Share of Revenue Increase,(Digital Revenue - Prior-Year Digital Revenue) / Revenue Increase. Do not add to the U.S. share: geography and channel overlap.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,Gross Margin,Gross Profit / Net Revenue.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,SG&A % of Revenue,SG&A / Net Revenue.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,Adj. EBITDA Margin,Adj. EBITDA (As Reported) / Net Revenue.,%,Calculated,Non-IFRS ratio,Ratio: recompute from SUM components; do not SUM
+Annual,Net Income Margin,Net Income / Net Revenue.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,Adj. EBITDA Increase,Adj. EBITDA - Prior-Year Adj. EBITDA (as reported basis).,C$ million,Calculated,Calculated,SUM
+Annual,EBITDA Change: Revenue Scale,Revenue Increase x prior-year Adj. EBITDA margin (Prior-Year Adj. EBITDA / Prior-Year Net Revenue).,C$ million,Calculated,Calculated,SUM
+Annual,EBITDA Change: Margin,(Adj. EBITDA Margin - prior-year margin) x Net Revenue. Scale + Margin = Adj. EBITDA Increase.,C$ million,Calculated,Calculated,SUM
+Annual,Inventory Growth,Inventory / Prior-Year Inventory - 1.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,Inventory less Revenue Growth,Inventory Growth - Revenue Growth (percentage-point gap as a decimal).,pp,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,Days in Inventory,(Prior-Year Inventory + Inventory) / 2 / COGS x Days in Period.,Days,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,CFO excl. WC,Operating Cash Flow - WC Cash-Flow Impact.,C$ million,Calculated,Analyst sensitivity,SUM
+Annual,FCF excl. WC,Free Cash Flow - WC Cash-Flow Impact.,C$ million,Calculated,Analyst sensitivity,SUM
+Annual,CFO Margin,Operating Cash Flow / Net Revenue.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,FCF Margin,Free Cash Flow / Net Revenue.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,Capex % of Revenue,Net Capex / Net Revenue.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,U.S. Boutique Growth,U.S. Boutiques End / Prior-Year U.S. Boutiques - 1.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+Annual,Current Ratio,Current Assets / Current Liabilities.,x,Calculated,Calculated ratio,Ratio: point-in-time
+Revenue_Mix,Period Type,Annual or Quarter.,Text,Dimension,Dimension,Dimension
+Revenue_Mix,Period,FY2026 or FY2026-Q3.,Text,Dimension,Dimension,Dimension
+Revenue_Mix,Fiscal Year,Fiscal year.,Text,Dimension,Dimension,Dimension
+Revenue_Mix,Quarter,Q1-Q4; 'FY' for annual rows.,Text,Dimension,Dimension,Dimension
+Revenue_Mix,Dimension,Geography or Channel. Each sums to Net Revenue; never add the two dimensions together.,Text,Dimension,Dimension,Dimension
+Revenue_Mix,Segment,"United States, Canada, Retail or Digital.",Text,Dimension,Dimension,Dimension
+Revenue_Mix,Revenue,"Segment revenue, linked to the Annual or Quarterly sheet.",C$ million,Linked,IFRS,SUM
+Revenue_Mix,Share of Net Revenue,Segment Revenue / Net Revenue for the same period.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+H1_Comparison,Fiscal Year,Fiscal year of the first half.,Text,Dimension,Dimension,Dimension
+H1_Comparison,Period,e.g. FY2027 H1.,Text,Dimension,Dimension,Dimension
+H1_Comparison,EBITDA Basis,FY2026-FY2027 H1 on the FY2027 definition; FY2024-FY2025 H1 original definition (FY2025 H1 not restated).,Text,Dimension,Dimension,Dimension
+H1_Comparison,Net Revenue,Sum of Q1 and Q2 Net Revenue from the Quarterly sheet (SUMIFS).,C$ million,Calculated (SUMIFS),IFRS,SUM
+H1_Comparison,U.S. Revenue,Sum of Q1 and Q2 U.S. Revenue from the Quarterly sheet (SUMIFS).,C$ million,Calculated (SUMIFS),IFRS,SUM
+H1_Comparison,Canada Revenue,Sum of Q1 and Q2 Canada Revenue from the Quarterly sheet (SUMIFS).,C$ million,Calculated (SUMIFS),IFRS,SUM
+H1_Comparison,Retail Revenue,Sum of Q1 and Q2 Retail Revenue from the Quarterly sheet (SUMIFS).,C$ million,Calculated (SUMIFS),IFRS,SUM
+H1_Comparison,Digital Revenue,Sum of Q1 and Q2 Digital Revenue from the Quarterly sheet (SUMIFS).,C$ million,Calculated (SUMIFS),IFRS,SUM
+H1_Comparison,Gross Profit excl. Refund,Sum of Q1 and Q2 Gross Profit excl. Refund from the Quarterly sheet (SUMIFS).,C$ million,Calculated (SUMIFS),IFRS,SUM
+H1_Comparison,SG&A,Sum of Q1 and Q2 SG&A from the Quarterly sheet (SUMIFS).,C$ million,Calculated (SUMIFS),IFRS,SUM
+H1_Comparison,Adj. EBITDA (Comparable),Sum of Q1 and Q2 Adj. EBITDA (Comparable) from the Quarterly sheet (SUMIFS).,C$ million,Calculated (SUMIFS),Non-IFRS,SUM
+H1_Comparison,Operating Cash Flow,Sum of Q1 and Q2 Operating Cash Flow from the Quarterly sheet (SUMIFS).,C$ million,Calculated (SUMIFS),IFRS,SUM
+H1_Comparison,WC Cash-Flow Impact,Sum of Q1 and Q2 WC Cash-Flow Impact from the Quarterly sheet (SUMIFS).,C$ million,Calculated (SUMIFS),IFRS,SUM
+H1_Comparison,Tariff Refund,Sum of Q1 and Q2 Tariff Refund from the Quarterly sheet (SUMIFS).,C$ million,Calculated (SUMIFS),IFRS,SUM
+H1_Comparison,Free Cash Flow,Sum of Q1 and Q2 Free Cash Flow from the Quarterly sheet (SUMIFS).,C$ million,Calculated (SUMIFS),Non-IFRS,SUM
+H1_Comparison,Net Capex,Sum of Q1 and Q2 Net Capex from the Quarterly sheet (SUMIFS).,C$ million,Calculated (SUMIFS),IFRS,SUM
+H1_Comparison,Prior-Year Net Revenue,Prior-year H1 value: sum of Q1 and Q2 Prior-Year Net Revenue from the Quarterly sheet. FY2024 row = FY2023 H1 from FY2023 Q1/Q2 releases.,C$ million,Calculated (SUMIFS),IFRS,Support field
+H1_Comparison,Prior-Year U.S. Revenue,Prior-year H1 value: sum of Q1 and Q2 Prior-Year U.S. Revenue from the Quarterly sheet. FY2024 row = FY2023 H1 from FY2023 Q1/Q2 releases.,C$ million,Calculated (SUMIFS),IFRS,Support field
+H1_Comparison,Prior-Year Canada Revenue,Prior-year H1 value: sum of Q1 and Q2 Prior-Year Canada Revenue from the Quarterly sheet. FY2024 row = FY2023 H1 from FY2023 Q1/Q2 releases.,C$ million,Calculated (SUMIFS),IFRS,Support field
+H1_Comparison,Prior-Year Retail Revenue,Prior-year H1 value: sum of Q1 and Q2 Prior-Year Retail Revenue from the Quarterly sheet. FY2024 row = FY2023 H1 from FY2023 Q1/Q2 releases.,C$ million,Calculated (SUMIFS),IFRS,Support field
+H1_Comparison,Prior-Year Digital Revenue,Prior-year H1 value: sum of Q1 and Q2 Prior-Year Digital Revenue from the Quarterly sheet. FY2024 row = FY2023 H1 from FY2023 Q1/Q2 releases.,C$ million,Calculated (SUMIFS),IFRS,Support field
+H1_Comparison,Revenue Growth,Net Revenue / Prior-Year Net Revenue - 1.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+H1_Comparison,U.S. Revenue Growth,U.S. Revenue vs prior-year H1.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+H1_Comparison,Canada Revenue Growth,Canada Revenue vs prior-year H1.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+H1_Comparison,Retail Revenue Growth,Retail vs prior-year H1.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+H1_Comparison,Digital Revenue Growth,Digital vs prior-year H1.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+H1_Comparison,U.S. Revenue Mix,U.S. / Net Revenue.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+H1_Comparison,U.S. Share of Revenue Increase,U.S. increase / total increase vs prior-year H1.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+H1_Comparison,Digital Share of Revenue Increase,Digital increase / total increase. Overlaps with geography.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+H1_Comparison,Gross Margin excl. Refund,Gross Profit excl. Refund / Net Revenue.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+H1_Comparison,SG&A % of Revenue,SG&A / Net Revenue.,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+H1_Comparison,Adj. EBITDA Margin,Summed Adj. EBITDA / summed Net Revenue (not an average of quarterly margins).,%,Calculated,Calculated ratio,Ratio: recompute from SUM components; do not SUM
+H1_Comparison,FCF excl. Tariff Receipt,Free Cash Flow - Tariff Refund. Analyst sensitivity; taxes unchanged.,C$ million,Calculated,Analyst sensitivity,SUM
+H1_Comparison,CFO excl. Tariff Receipt,Operating Cash Flow - Tariff Refund.,C$ million,Calculated,Analyst sensitivity,SUM
+H1_Comparison,CFO excl. WC,Operating Cash Flow - WC Cash-Flow Impact.,C$ million,Calculated,Analyst sensitivity,SUM
+Bridges,Bridge,Which bridge the step belongs to.,Text,Dimension,Dimension,Dimension
+Bridges,Step Order,Sort order within the bridge.,Order,Dimension,Dimension,Dimension
+Bridges,Step,Step label.,Text,Dimension,Dimension,Dimension
+Bridges,Step Type,"Start, Change or End. Start/End bars begin at zero; Change bars float.",Text,Dimension,Dimension,Dimension
+Bridges,Amount,Step amount (C$ million). For a Tableau waterfall use RUNNING_SUM within each bridge.,C$ million,Calculated,Calculated,SUM within bridge
+Bridges,Bar Start,"Where the bar starts: 0 for Start/End, previous cumulative total for Change.",C$ million,Calculated,Calculated,Support field
+Bridges,Bar End,Where the bar ends.,C$ million,Calculated,Calculated,Support field
+Forecast_Assumptions,Scenario,"Base, Downside or Upside. Conditional planning cases, not probabilities.",Text,Dimension,Dimension,Dimension
+Forecast_Assumptions,Period,Forecast quarter.,Text,Dimension,Dimension,Dimension
+Forecast_Assumptions,Fiscal Year,Fiscal year.,Text,Dimension,Dimension,Dimension
+Forecast_Assumptions,Quarter,Quarter.,Text,Dimension,Dimension,Dimension
+Forecast_Assumptions,U.S. Revenue Growth,Assumed YoY growth vs the same quarter of the prior year.,%,Analyst assumption,Assumption,Input
+Forecast_Assumptions,Canada Revenue Growth,Assumed YoY growth vs the same quarter of the prior year.,%,Analyst assumption,Assumption,Input
+Forecast_Assumptions,Gross Margin excl. Refunds,Assumed gross margin excluding tariff refunds (future refunds assumed zero).,%,Analyst assumption,Assumption,Input
+Forecast_Assumptions,SG&A Ratio,Assumed SG&A / revenue. Keeps the historical seasonal pattern (Q1 highest).,%,Analyst assumption,Assumption,Input
+Forecast_Assumptions,Reconciliation Ratio,EBITDA reconciliation items / revenue (D&A and other adjustments in aggregate). Calibrated to 1.42%-2.38% in FY2026 Q1-FY2027 Q2; same in all scenarios.,%,Analyst assumption,Assumption,Input
+Forecast_Quarterly,Scenario,Scenario. Actual quarters are repeated in every scenario so a scenario filter shows a continuous line.,Text,Dimension,Dimension,Dimension
+Forecast_Quarterly,Period,Fiscal quarter.,Text,Dimension,Dimension,Dimension
+Forecast_Quarterly,Fiscal Year,Fiscal year.,Text,Dimension,Dimension,Dimension
+Forecast_Quarterly,Quarter,Quarter.,Text,Dimension,Dimension,Dimension
+Forecast_Quarterly,Status,Actual or Forecast.,Text,Dimension,Dimension,Dimension
+Forecast_Quarterly,U.S. Revenue Growth,Actual: realized YoY. Forecast: looked up from Forecast_Assumptions.,%,Assumption / actual,Ratio,Ratio: recompute from SUM components; do not SUM
+Forecast_Quarterly,Canada Revenue Growth,Actual: realized YoY. Forecast: assumption.,%,Assumption / actual,Ratio,Ratio: recompute from SUM components; do not SUM
+Forecast_Quarterly,Gross Margin excl. Refunds,Actual: realized. Forecast: assumption.,%,Assumption / actual,Ratio,Ratio: recompute from SUM components; do not SUM
+Forecast_Quarterly,SG&A Ratio,Actual: realized. Forecast: assumption.,%,Assumption / actual,Ratio,Ratio: recompute from SUM components; do not SUM
+Forecast_Quarterly,Reconciliation Ratio,Actual: (Adj. EBITDA - GP excl. refunds + SG&A) / revenue. Forecast: assumption.,%,Assumption / actual,Ratio,Ratio: recompute from SUM components; do not SUM
+Forecast_Quarterly,Prior-Year U.S. Revenue,"Same quarter one year earlier, within the same scenario.",C$ million,Linked,Calculated,Support field
+Forecast_Quarterly,Prior-Year Canada Revenue,"Same quarter one year earlier, within the same scenario.",C$ million,Linked,Calculated,Support field
+Forecast_Quarterly,U.S. Revenue,Actual: reported. Forecast: Prior-Year U.S. Revenue x (1 + U.S. Revenue Growth).,C$ million,Actual / forecast,IFRS / forecast,SUM
+Forecast_Quarterly,Canada Revenue,Actual: reported. Forecast: Prior-Year Canada Revenue x (1 + Canada Revenue Growth).,C$ million,Actual / forecast,IFRS / forecast,SUM
+Forecast_Quarterly,Net Revenue,U.S. Revenue + Canada Revenue.,C$ million,Actual / forecast,IFRS / forecast,SUM
+Forecast_Quarterly,Revenue YoY,Net Revenue / prior-year same-quarter revenue - 1.,%,Calculated,Ratio,Ratio: recompute from SUM components; do not SUM
+Forecast_Quarterly,Gross Profit excl. Refunds,Actual: reported GP less tariff refund. Forecast: Net Revenue x Gross Margin excl. Refunds.,C$ million,Actual / forecast,Non-IFRS (analyst),SUM
+Forecast_Quarterly,SG&A,Actual: reported. Forecast: Net Revenue x SG&A Ratio.,C$ million,Actual / forecast,IFRS / forecast,SUM
+Forecast_Quarterly,Reconciliation Items,Adj. EBITDA - (GP excl. refunds - SG&A). Forecast: Net Revenue x Reconciliation Ratio.,C$ million,Actual / forecast,Non-IFRS bridge,SUM
+Forecast_Quarterly,Adj. EBITDA,Actual: reported (FY2027 definition). Forecast: GP excl. refunds - SG&A + Reconciliation Items.,C$ million,Actual / forecast,Non-IFRS,SUM
+Forecast_Quarterly,Adj. EBITDA Margin,Adj. EBITDA / Net Revenue.,%,Calculated,Non-IFRS ratio,Ratio: recompute from SUM components; do not SUM
+Forecast_Quarterly,COGS excl. Refunds,Net Revenue - Gross Profit excl. Refunds. Drives the inventory target.,C$ million,Calculated,Calculated,SUM
+Forecast_Annual,Scenario,Scenario.,Text,Dimension,Dimension,Dimension
+Forecast_Annual,Fiscal Year,Fiscal year.,Text,Dimension,Dimension,Dimension
+Forecast_Annual,Status,FY2026 Actual; FY2027 = H1 actual + H2 forecast; FY2028 Forecast.,Text,Dimension,Dimension,Dimension
+Forecast_Annual,Net Revenue,Sum of quarters in Forecast_Quarterly.,C$ million,Calculated (SUMIFS),IFRS / forecast,SUM
+Forecast_Annual,Revenue Growth,Net Revenue / prior-year Net Revenue - 1.,%,Calculated,Ratio,Ratio: recompute from SUM components; do not SUM
+Forecast_Annual,U.S. Revenue,Sum of quarters.,C$ million,Calculated (SUMIFS),IFRS / forecast,SUM
+Forecast_Annual,Canada Revenue,Sum of quarters.,C$ million,Calculated (SUMIFS),IFRS / forecast,SUM
+Forecast_Annual,U.S. Share of Revenue Increase,U.S. revenue increase / total revenue increase vs prior year.,%,Calculated,Ratio,Ratio: recompute from SUM components; do not SUM
+Forecast_Annual,Gross Profit excl. Refunds,Sum of quarters.,C$ million,Calculated (SUMIFS),Non-IFRS (analyst),SUM
+Forecast_Annual,Gross Margin excl. Refunds,Annual GP excl. refunds / annual revenue.,%,Calculated,Ratio,Ratio: recompute from SUM components; do not SUM
+Forecast_Annual,SG&A,Sum of quarters.,C$ million,Calculated (SUMIFS),IFRS / forecast,SUM
+Forecast_Annual,SG&A Ratio,Annual SG&A / annual revenue.,%,Calculated,Ratio,Ratio: recompute from SUM components; do not SUM
+Forecast_Annual,Adj. EBITDA,Sum of quarters (FY2027 definition; FY2026 = restated 659.7).,C$ million,Calculated (SUMIFS),Non-IFRS,SUM
+Forecast_Annual,Adj. EBITDA Growth,Adj. EBITDA / prior-year Adj. EBITDA - 1. FY2026 row is on the ORIGINAL definition for both years (646.2 / 406.3 - 1) because FY2025 was never restated in full to the FY2027 definition.,%,Calculated,Ratio,Ratio: recompute from SUM components; do not SUM
+Forecast_Annual,Adj. EBITDA Margin,"Annual Adj. EBITDA / annual revenue (from dollar totals, not an average of quarterly margins).",%,Calculated,Non-IFRS ratio,Ratio: recompute from SUM components; do not SUM
+Forecast_Annual,COGS excl. Refunds,Sum of quarters.,C$ million,Calculated (SUMIFS),Calculated,SUM
+Forecast_Annual,Inventory Days,"FY2026: actual days in inventory. FY2027-FY2028: assumed annual holding period (364-day year, two-point average).",Days,Actual / analyst assumption,Assumption,Input
+Forecast_Annual,Opening Inventory,Prior year-end inventory (FY2027 opens at C$495.2m).,C$ million,Linked,Balance,Period-end balance: do not SUM across periods
+Forecast_Annual,Average Inventory Target,COGS excl. Refunds x Inventory Days / 364.,C$ million,Calculated,Planning proxy,Support field
+Forecast_Annual,Ending Inventory Target,2 x Average Inventory Target - Opening Inventory. FY2026 = actual.,C$ million,Calculated,Planning proxy,Period-end balance: do not SUM across periods
+Forecast_Annual,Inventory Build,"Ending - Opening inventory. A balance-sheet planning proxy, not a purchase schedule.",C$ million,Calculated,Planning proxy,SUM
+Forecast_Annual,Net Capex,"FY2026 actual; FY2027 = management plan (~C$250m; Upside 275); FY2028 = analyst assumption, not guidance.",C$ million,Actual / guidance / assumption,Assumption,SUM
+Sensitivity,U.S. Growth Change,Absolute change applied to Base U.S. growth in every FY2028 quarter (FY2027 held fixed).,pp,Scenario lever,Assumption,Dimension
+Sensitivity,Gross Margin Change,Absolute change applied to Base gross margin in every FY2028 quarter; SG&A and reconciliation ratios fixed.,pp,Scenario lever,Assumption,Dimension
+Sensitivity,Case,Label for the cell of the grid.,Text,Dimension,Dimension,Dimension
+Sensitivity,FY2028 Revenue,Base FY2028 revenue + U.S. Growth Change x FY2028 prior-year U.S. revenue.,C$ million,Calculated (SUMPRODUCT),Forecast,SUM
+Sensitivity,FY2028 Adj. EBITDA,Sum over FY2028 quarters of (revenue + dUS x prior-year U.S. revenue) x (EBITDA margin + dGM).,C$ million,Calculated (SUMPRODUCT),Non-IFRS forecast,SUM
+Sensitivity,Change vs Base,FY2028 Adj. EBITDA - Base FY2028 Adj. EBITDA.,C$ million,Calculated,Forecast,SUM
+Sensitivity,Change vs Base %,Change vs Base / Base FY2028 Adj. EBITDA.,%,Calculated,Ratio,Ratio: recompute from SUM components; do not SUM
+Guidance_Check,Measure,Measure compared.,Text,Dimension,Dimension,Dimension
+Guidance_Check,Unit,C$ million or %.,Text,Dimension,Dimension,Dimension
+Guidance_Check,Guidance Low,Low end of management outlook (8 Oct 2026). Approximate where noted.,Mixed,Management guidance,Guidance,Input
+Guidance_Check,Guidance High,High end of management outlook.,Mixed,Management guidance,Guidance,Input
+Guidance_Check,Guidance Midpoint,(Low + High) / 2.,Mixed,Calculated,Guidance,Input
+Guidance_Check,Base Forecast,Independent Base-case value from Forecast_Annual / Forecast_Quarterly.,Mixed,Calculated,Forecast,Input
+Guidance_Check,Difference vs Midpoint,Base Forecast - Guidance Midpoint.,Mixed,Calculated,Forecast,Input
+Guidance_Check,Position,Within range / Above / Below.,Text,Dimension,Dimension,Dimension
+Guidance_Check,Note,Basis of the guidance figure.,Text,Dimension,Dimension,Dimension
+Guidance_Requirements,Case,"Low, Midpoint or High end of FY2027 guidance.",Text,Dimension,Dimension,Dimension
+Guidance_Requirements,FY2027 Revenue Guidance,"Management outlook, 8 Oct 2026.",C$ million,Management guidance,Guidance,SUM
+Guidance_Requirements,FY2027 H1 Revenue,Actual H1 revenue.,C$ million,Linked,IFRS,SUM
+Guidance_Requirements,H2 Revenue Required,Guidance - H1 actual.,C$ million,Calculated,Calculated,SUM
+Guidance_Requirements,FY2026 H2 Revenue,Prior-year H2 (Q3 + Q4) revenue.,C$ million,Calculated (SUMIFS),IFRS,SUM
+Guidance_Requirements,H2 Growth Required,H2 Revenue Required / FY2026 H2 Revenue - 1.,%,Calculated,Ratio,Ratio: recompute from SUM components; do not SUM
+Guidance_Requirements,FY2027 H1 Adj. EBITDA,Actual H1 Adj. EBITDA (FY2027 definition).,C$ million,Linked,Non-IFRS,SUM
+Guidance_Requirements,H2 EBITDA Margin Required,(20% x guidance revenue - H1 Adj. EBITDA) / H2 Revenue Required.,%,Calculated,Ratio,Ratio: recompute from SUM components; do not SUM
+Guidance_Requirements,FY2027 Net Capex Guidance,Approximately C$250m.,C$ million,Management guidance,Guidance,SUM
+Guidance_Requirements,FY2027 H1 Net Capex,Actual H1 net capex.,C$ million,Linked,IFRS,SUM
+Guidance_Requirements,Remaining Net Capex,Capex guidance - H1 actual.,C$ million,Calculated,Calculated,SUM
+Benchmark,Test Period,Quarter being forecast one quarter ahead.,Text,Dimension,Dimension,Dimension
+Benchmark,Actual Revenue,Reported net revenue.,C$ million,Linked,IFRS,SUM
+Benchmark,Seasonal-Naive Forecast,Same quarter's revenue one year earlier.,C$ million,Calculated,Benchmark,SUM
+Benchmark,Geographic-Growth Forecast,Each region's prior-year same-quarter revenue x (1 + that region's latest reported quarterly YoY growth). Uses only information available before the test quarter.,C$ million,Calculated,Benchmark,SUM
+Benchmark,Seasonal-Naive Error,Forecast - Actual.,C$ million,Calculated,Benchmark,SUM
+Benchmark,Geographic-Growth Error,Forecast - Actual.,C$ million,Calculated,Benchmark,SUM
+Benchmark,Seasonal-Naive APE,|Error| / Actual.,%,Calculated,Benchmark,Ratio: recompute from SUM components; do not SUM
+Benchmark,Geographic-Growth APE,|Error| / Actual.,%,Calculated,Benchmark,Ratio: recompute from SUM components; do not SUM
+KPI_Summary,Section,Story section.,Text,Dimension,Dimension,Dimension
+KPI_Summary,KPI,Headline measure.,Text,Dimension,Dimension,Dimension
+KPI_Summary,Value,Live formula pointing to the calculation sheets.,Mixed,Calculated,Mixed,Single value
+KPI_Summary,Unit,Display unit.,Text,Dimension,Dimension,Dimension
+KPI_Summary,Source Sheet,Where the number is calculated.,Text,Dimension,Dimension,Dimension
+KPI_Summary,Interpretation,One-line reading of the number.,Text,Dimension,Dimension,Dimension

@@ -1,0 +1,12 @@
+Bridge,Step Order,Step,Step Type,Amount,Bar Start,Bar End
+FY2026 operating cash flow bridge,1,FY2025 CFO,Start,455.637,0.0,455.637
+FY2026 operating cash flow bridge,2,Other CFO changes,Change,182.631,455.637,638.268
+FY2026 operating cash flow bridge,3,Working-capital cash-flow change,Change,184.507,638.268,822.775
+FY2026 operating cash flow bridge,4,FY2026 CFO,End,822.775,0.0,822.775
+FY2026 Adj. EBITDA bridge (as reported),1,FY2025 Adj. EBITDA,Start,406.344,0.0,406.344
+FY2026 Adj. EBITDA bridge (as reported),2,Revenue scale at FY2025 margin,Change,143.065822,406.344,549.409822
+FY2026 Adj. EBITDA bridge (as reported),3,Margin improvement,Change,96.792178,549.409822,646.202
+FY2026 Adj. EBITDA bridge (as reported),4,FY2026 Adj. EBITDA,End,646.202,0.0,646.202
+FY2027 H1 free cash flow: tariff sensitivity,1,Reported FCF,Start,205.745,0.0,205.745
+FY2027 H1 free cash flow: tariff sensitivity,2,Less gross tariff receipt,Change,-97.437,205.745,108.308
+FY2027 H1 free cash flow: tariff sensitivity,3,FCF excl. tariff receipt,End,108.308,0.0,108.308

@@ -1,0 +1,77 @@
+Period Type,Period,Fiscal Year,Quarter,Dimension,Segment,Revenue,Share of Net Revenue
+Annual,FY2022,FY2022,FY,Geography,United States,676.135,0.452376
+Annual,FY2022,FY2022,FY,Geography,Canada,818.495,0.547624
+Annual,FY2022,FY2022,FY,Channel,Retail,930.29,0.622422
+Annual,FY2022,FY2022,FY,Channel,Digital,564.34,0.377578
+Annual,FY2023,FY2023,FY,Geography,United States,1120.962,0.510542
+Annual,FY2023,FY2023,FY,Geography,Canada,1074.668,0.489458
+Annual,FY2023,FY2023,FY,Channel,Retail,1425.779,0.649371
+Annual,FY2023,FY2023,FY,Channel,Digital,769.851,0.350629
+Annual,FY2024,FY2024,FY,Geography,United States,1226.476,0.525854
+Annual,FY2024,FY2024,FY,Geography,Canada,1105.874,0.474146
+Annual,FY2024,FY2024,FY,Channel,Retail,1547.046,0.663299
+Annual,FY2024,FY2024,FY,Channel,Digital,785.304,0.336701
+Annual,FY2025,FY2025,FY,Geography,United States,1581.821,0.577705
+Annual,FY2025,FY2025,FY,Geography,Canada,1156.291,0.422295
+Annual,FY2025,FY2025,FY,Channel,Retail,1787.084,0.65267
+Annual,FY2025,FY2025,FY,Channel,Digital,951.028,0.34733
+Annual,FY2026,FY2026,FY,Geography,United States,2275.431,0.614625
+Annual,FY2026,FY2026,FY,Geography,Canada,1426.717,0.385375
+Annual,FY2026,FY2026,FY,Channel,Retail,2407.538,0.650308
+Annual,FY2026,FY2026,FY,Channel,Digital,1294.61,0.349692
+Quarter,FY2024-Q1,FY2024,Q1,Geography,United States,251.892,0.544437
+Quarter,FY2024-Q1,FY2024,Q1,Geography,Canada,210.773,0.455563
+Quarter,FY2024-Q1,FY2024,Q1,Channel,Retail,327.57,0.708007
+Quarter,FY2024-Q1,FY2024,Q1,Channel,Digital,135.095,0.291993
+Quarter,FY2024-Q2,FY2024,Q2,Geography,United States,278.858,0.522019
+Quarter,FY2024-Q2,FY2024,Q2,Geography,Canada,255.333,0.477981
+Quarter,FY2024-Q2,FY2024,Q2,Channel,Retail,362.014,0.677686
+Quarter,FY2024-Q2,FY2024,Q2,Channel,Digital,172.177,0.322314
+Quarter,FY2024-Q3,FY2024,Q3,Geography,United States,326.605,0.49976
+Quarter,FY2024-Q3,FY2024,Q3,Geography,Canada,326.919,0.50024
+Quarter,FY2024-Q3,FY2024,Q3,Channel,Retail,441.056,0.674889
+Quarter,FY2024-Q3,FY2024,Q3,Channel,Digital,212.468,0.325111
+Quarter,FY2024-Q4,FY2024,Q4,Geography,United States,369.121,0.541257
+Quarter,FY2024-Q4,FY2024,Q4,Geography,Canada,312.849,0.458743
+Quarter,FY2024-Q4,FY2024,Q4,Channel,Retail,416.406,0.610593
+Quarter,FY2024-Q4,FY2024,Q4,Channel,Digital,265.564,0.389407
+Quarter,FY2025-Q1,FY2025,Q1,Geography,United States,284.661,0.570886
+Quarter,FY2025-Q1,FY2025,Q1,Geography,Canada,213.969,0.429114
+Quarter,FY2025-Q1,FY2025,Q1,Channel,Retail,357.843,0.717652
+Quarter,FY2025-Q1,FY2025,Q1,Channel,Digital,140.787,0.282348
+Quarter,FY2025-Q2,FY2025,Q2,Geography,United States,345.395,0.561013
+Quarter,FY2025-Q2,FY2025,Q2,Geography,Canada,270.268,0.438987
+Quarter,FY2025-Q2,FY2025,Q2,Channel,Retail,425.621,0.691321
+Quarter,FY2025-Q2,FY2025,Q2,Channel,Digital,190.042,0.308679
+Quarter,FY2025-Q3,FY2025,Q3,Geography,United States,403.72,0.554027
+Quarter,FY2025-Q3,FY2025,Q3,Geography,Canada,324.981,0.445973
+Quarter,FY2025-Q3,FY2025,Q3,Channel,Retail,486.559,0.667707
+Quarter,FY2025-Q3,FY2025,Q3,Channel,Digital,242.142,0.332293
+Quarter,FY2025-Q4,FY2025,Q4,Geography,United States,548.045,0.61226
+Quarter,FY2025-Q4,FY2025,Q4,Geography,Canada,347.073,0.38774
+Quarter,FY2025-Q4,FY2025,Q4,Channel,Retail,517.061,0.577646
+Quarter,FY2025-Q4,FY2025,Q4,Channel,Digital,378.057,0.422354
+Quarter,FY2026-Q1,FY2026,Q1,Geography,United States,412.987,0.62261
+Quarter,FY2026-Q1,FY2026,Q1,Geography,Canada,250.329,0.37739
+Quarter,FY2026-Q1,FY2026,Q1,Channel,Retail,480.306,0.724098
+Quarter,FY2026-Q1,FY2026,Q1,Channel,Digital,183.01,0.275902
+Quarter,FY2026-Q2,FY2026,Q2,Geography,United States,486.089,0.598592
+Quarter,FY2026-Q2,FY2026,Q2,Geography,Canada,325.965,0.401408
+Quarter,FY2026-Q2,FY2026,Q2,Channel,Retail,571.717,0.704038
+Quarter,FY2026-Q2,FY2026,Q2,Channel,Digital,240.337,0.295962
+Quarter,FY2026-Q3,FY2026,Q3,Geography,United States,621.079,0.59704
+Quarter,FY2026-Q3,FY2026,Q3,Geography,Canada,419.184,0.40296
+Quarter,FY2026-Q3,FY2026,Q3,Channel,Retail,657.296,0.631856
+Quarter,FY2026-Q3,FY2026,Q3,Channel,Digital,382.967,0.368144
+Quarter,FY2026-Q4,FY2026,Q4,Geography,United States,755.276,0.63655
+Quarter,FY2026-Q4,FY2026,Q4,Geography,Canada,431.239,0.36345
+Quarter,FY2026-Q4,FY2026,Q4,Channel,Retail,698.219,0.588462
+Quarter,FY2026-Q4,FY2026,Q4,Channel,Digital,488.296,0.411538
+Quarter,FY2027-Q1,FY2027,Q1,Geography,United States,638.083,0.670954
+Quarter,FY2027-Q1,FY2027,Q1,Geography,Canada,312.926,0.329046
+Quarter,FY2027-Q1,FY2027,Q1,Channel,Retail,666.344,0.700671
+Quarter,FY2027-Q1,FY2027,Q1,Channel,Digital,284.665,0.299329
+Quarter,FY2027-Q2,FY2027,Q2,Geography,United States,779.418,0.666276
+Quarter,FY2027-Q2,FY2027,Q2,Geography,Canada,390.395,0.333724
+Quarter,FY2027-Q2,FY2027,Q2,Channel,Retail,766.866,0.655546
+Quarter,FY2027-Q2,FY2027,Q2,Channel,Digital,402.947,0.344454

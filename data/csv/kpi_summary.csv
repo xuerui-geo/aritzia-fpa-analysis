@@ -1,0 +1,41 @@
+Section,KPI,Value,Unit,Source Sheet,Interpretation
+Growth,U.S. share of FY2026 revenue increase,0.719486,%,Annual,"Share of incremental revenue, not of total revenue."
+Growth,U.S. share of FY2027 H1 revenue increase,0.803197,%,H1_Comparison,The U.S. supplies most incremental revenue.
+Growth,"U.S. revenue mix, FY2022",0.452376,%,Annual,Starting point of the mix shift.
+Growth,"U.S. revenue mix, FY2026",0.614625,%,Annual,The U.S. is now the larger revenue base.
+Growth,FY2027 H1 revenue growth,0.437485,%,H1_Comparison,"Year-over-year, same-period comparison."
+Growth,FY2027 H1 Digital revenue growth,0.624228,%,H1_Comparison,Digital is the faster-growing channel.
+Growth,FY2027 H1 Retail revenue growth,0.362337,%,H1_Comparison,Retail also grows strongly.
+Growth,FY2027 H1 comparable sales growth (reported),0.348,%,Sources [S3],Company-reported; demand beyond new boutiques.
+Profitability,FY2026 H1 Adj. EBITDA margin (FY2027 definition),0.155493,%,H1_Comparison,Comparable prior-year base.
+Profitability,FY2027 H1 Adj. EBITDA margin,0.206402,%,H1_Comparison,Margin expanded on a consistent definition.
+Profitability,FY2026 H1 gross margin excl. refunds,0.453057,%,H1_Comparison,Comparable prior-year base.
+Profitability,FY2027 H1 gross margin excl. refunds,0.494165,%,H1_Comparison,Improvement survives the refund adjustment.
+Profitability,FY2027 H1 SG&A % of revenue,0.306517,%,H1_Comparison,Operating leverage vs FY2026 H1.
+Profitability,"FY2027 Q2 gross margin, reported",0.57056,%,Quarterly,Includes the C$97.4m tariff refund.
+Profitability,FY2027 Q2 gross margin excl. refund,0.487267,%,Quarterly,"Use this, not 57.1%, for run-rate planning."
+Profitability,"FY2026 Adj. EBITDA, restated to FY2027 definition",659.67,C$ million,Annual,Comparison base for FY2027 (vs 646.2 as reported).
+Cash,Working-capital share of FY2026 CFO increase,0.502555,%,Annual,About half of the CFO increase was working-capital timing.
+Cash,FY2026 FCF excl. working-capital effects,298.444,C$ million,Annual,Still positive without the WC release.
+Cash,"FY2027 H1 FCF, reported",205.745,C$ million,H1_Comparison,Includes the C$97.4m gross tariff refund receipt.
+Cash,FY2027 H1 FCF excl. gross tariff receipt,108.308,C$ million,H1_Comparison,Positive even without the one-off receipt (taxes unchanged).
+Inventory,FY2027 Q2 inventory growth (YoY),0.357645,%,Quarterly,Below revenue growth...
+Inventory,FY2027 Q2 revenue growth (YoY),0.440561,%,Quarterly,Benchmark for the inventory growth above.
+Inventory,FY2026 Q2 days in inventory,93.310967,Days,Quarterly,Prior-year same-quarter base.
+Inventory,FY2027 Q2 days in inventory,95.788104,Days,Quarterly,...but turnover did not improve.
+Outlook,"H2 revenue growth required, guidance low",0.194182,%,Guidance_Requirements,Guidance implies slower H2 growth than H1.
+Outlook,"H2 revenue growth required, guidance high",0.23909,%,Guidance_Requirements,Upper end; H1 actual growth was 43.7%.
+Outlook,Base FY2027 revenue,4855.83542,C$ million,Forecast_Annual,Within the C$4.78-4.88bn outlook.
+Outlook,Base FY2027 Adj. EBITDA margin,0.201303,%,Forecast_Annual,About 13 bps above the ~20% outlook.
+Outlook,Base FY2028 revenue,5598.851182,C$ million,Forecast_Annual,Growth moderates to 15.3%.
+Outlook,Base FY2028 Adj. EBITDA,1140.394299,C$ million,Forecast_Annual,Up 16.7% on FY2027.
+Outlook,Base FY2028 Adj. EBITDA margin,0.203684,%,Forecast_Annual,Close to the 21% long-term objective.
+Outlook,FY2028 EBITDA impact of +/-1pp gross margin,55.988512,C$ million,Sensitivity,Margin is the larger single lever.
+Outlook,FY2028 EBITDA impact of +/-5pp U.S. growth,32.502969,C$ million,Sensitivity,Smaller than the 1pp margin effect.
+Outlook,FY2028 ending inventory impact of +5 inventory days,80.852816,C$ million,Forecast_Annual,"Inventory commitment, not a cash forecast."
+Benchmark,Seasonal-naive MAPE (6 quarters),0.273926,%,Benchmark,Seasonality alone misses rapid growth.
+Benchmark,Geographic-growth MAPE (6 quarters),0.043413,%,Benchmark,Region-level growth tracks far better.
+Benchmark,Seasonal-naive WAPE,0.276403,%,Benchmark,Revenue-weighted error.
+Benchmark,Geographic-growth WAPE,0.047241,%,Benchmark,Revenue-weighted error.
+Benchmark,Seasonal-naive aggregate bias,-0.276403,%,Benchmark,Negative = under-forecast.
+Benchmark,Geographic-growth aggregate bias,-0.009626,%,Benchmark,Close to unbiased.
