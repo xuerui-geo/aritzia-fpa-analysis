@@ -49,7 +49,7 @@ These are conditional planning cases built on analyst-selected assumptions, not 
 
 1. **Plan on the Base case and stress-test with Downside.** Investigate any FY2027 Q3 revenue variance above 5% against the C$1,285.3m Base forecast.
 2. **Treat gross margin as the main profit lever.** Track markdowns, freight, tariffs and mix separately. Reforecast if gross margin runs 50 basis points (bps) below plan.
-3. **Hold inventory to an ~80-day annual target.** Each extra 5 days adds about C$80.9m to the FY2028 ending inventory requirement.
+3. **Hold inventory to an ~80-day annual target.** Each extra 5 days adds about C$80.9m to the FY2028 ending inventory requirement. Note: The 93–96 inventory days in Key Findings use the workbook’s quarterly measure. The 80-day target uses an annual measure (annual cost of sales, average of opening and ending inventory, 364 days), which was about 78 days in FY2026. The two figures are not directly comparable.
 4. **Phase discretionary capex.** Review FY2028 commitments against the C$300m assumption and re-sequence if demand moves toward Downside. Keep committed capex separate from discretionary spending.
 5. **Close the evidence gap on U.S. store returns.** Public data cannot show boutique-level profit or payback. A store-cohort model needs opening dates, selling area, ramp profiles and opening costs.
 
